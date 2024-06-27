@@ -66,6 +66,8 @@ nav {
     background-color: var(--bg-color-primary);
     height: 4.5em;
     padding: 1.25em 1.5em;
+    position: sticky;
+    top: 0;
 }
 
 #nav-container {
