@@ -4,7 +4,8 @@ Please replicate the design provided.
 
 A few libraries have been provided, but feel free to use any you feel more comfortable with.
 
-### A few points:
+### A few points
+
 - Mobile first approach to be taken
 - Assume the breakpoint is 768px.
 - Assume the site sizes are in base 16
@@ -17,4 +18,4 @@ A few libraries have been provided, but feel free to use any you feel more comfo
 
 ### Design can be found [here](https://www.figma.com/design/p30raPDU05SFTSrxjhT8KX/Oxygen-Dev-Assessment?node-id=0-1&t=oL73fO3Bje0HUQw5-0)
 
-Please fork repository into your own account to begin, and share access to repository once done. 
+Please fork repository into your own account to begin, and share access to repository once done.

@@ -1,8 +1,239 @@
 :root {
     --font-base: Roboto, sans-serif;
     --bg-color-primary: #2E3142;
+    --bg-color-secondary: #D9D9D9;
     --text-color-primary: #2E3142;
     --link-color-primary: #1696E0;
     --button-bg-color-primary: #1696E0;
     --button-text-color-primary: white;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-base);
+    box-sizing: border-box;
+}
+
+main {
+    width: 100%;
+}
+
+section {
+    width: auto;
+    padding: 1.5em 1.5em;
+}
+
+h1 {
+    font-size: 2.375em;
+    color: var(--text-color-primary);
+    text-align: center;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.375em;
+}
+
+.max-width {
+    max-width: 1280px;
+    margin: auto;
+}
+
+.primary-button {
+    padding: 1em 1em;
+    background-color: var(--button-bg-color-primary);
+    color: var(--button-text-color-primary);
+    letter-spacing: 0.15em;
+    border: none;
+    outline: none;
+    border-radius: 0.25em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 300ms;
+}
+
+.primary-button:hover {
+    background-color: #70c1f0;
+}
+
+.secondary-p-text {
+    font-size: 1.5em;
+    line-height: 1.75em;
+}
+
+nav {
+    background-color: var(--bg-color-primary);
+    height: 4.5em;
+    padding: 1.25em 1.5em;
+}
+
+#nav-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item-container {
+    display: none;
+}
+
+.nav-item {
+    color: var(--bg-color-primary);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.mobile-nav-menu {
+    display: none;
+    padding: 1.5em;
+    box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.3);
+}
+
+.mobile-nav-content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+}
+
+#burger-menu {
+    background-image: url("./img/burger-menu.svg");
+    padding: 1.5em 0;
+    cursor: pointer;
+}
+
+#hero-img {
+    width: 100%;
+}
+
+.hero-title {
+    text-align: left;
+}
+
+.article-section {
+    background-color: var(--bg-color-secondary);
+    padding: 1em 0;
+}
+
+.article-container {
+    display: grid;
+}
+
+.article-card {
+    padding: 1em;
+    overflow: hidden;
+}
+
+.article-card>img {
+    width: 100%;
+}
+
+.article-card>h1 {
+    text-align: left;
+}
+
+.article-card>a {
+    color: var(--link-color-primary);
+}
+
+.client-logo-container {
+    margin: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    place-items: center;
+}
+
+footer {
+    background-color: var(--bg-color-primary);
+    padding: 4em 1.5em;
+    color: var(--button-text-color-primary);
+    font-weight: bold;
+    font-size: 0.875em;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.75em;
+}
+
+#footer-logo {
+    margin: 2em 0;
+}
+
+.division-line {
+    opacity: 0.23;
+    width: 100%;
+}
+
+.address {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.75em;
+}
+
+.location {
+    font-weight: 300;
+}
+
+/* desktop */
+@media only screen and (min-width: 48em) {
+    nav {
+        height: 5.875em;
+    }
+
+    .nav-item-container {
+        display: flex;
+        column-gap: 2em;
+        align-items: center;
+    }
+
+    .nav-item {
+        color: var(--button-text-color-primary);
+        text-decoration: none;
+        font-weight: 500;
+    }
+
+    #burger-menu {
+        display: none;
+    }
+
+    .hero-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        margin: auto;
+        padding: 6em 1.5em;
+        column-gap: 1.875em;
+        place-items: center;
+    }
+
+    .client-logo-container {
+        display: flex;
+        column-gap: 1em;
+        margin: auto;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .article-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .footer-links {
+        display: flex;
+        align-items: center;
+        column-gap: 3em;
+    }
+
+    .footer-links-container {
+        display: flex;
+        align-items: center;
+        column-gap: 3em;
+    }
 }
